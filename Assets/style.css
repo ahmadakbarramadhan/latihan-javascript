@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    background-color: darkblue;
+    padding: 20px;
+    text-align: left;
+}
+
+.topnav{
+    overflow:hidden;
+    background-color: lightgray;
+}
+
+.topnav a{
+    float:left;
+    display:block;
+    color: darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.column{
+    float:left;
+    width:33.33%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.title{
+    margin: 10px;
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.footer {
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.empcolumn{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.col25{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.col75{
+    float: left;
+    width: 75%;
+    padding: 5px;
+}
+
+input[type=text], input[type=date], input[type=email], input[type=number], select, textarea{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit], input[type=button], input[type=reset]{
+    width:75px;
+    padding:6px 0;
+    color:white;
+    cursor:pointer;
+    border:1px solid gray;
+    background-color: darkblue;
+    border-radius: 50px;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+
+input[type=button]:hover{
+    background-color: darkgreen;
+}
+
+table, td, th, tr {
+    text-align: center;
+    border: 2px solid black;
+    vertical-align: middle;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>BATCH 7</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="employees.html">Employees</a>
+    </div>
+
+    <h2 style="padding: 0px 15px;">Employee</h2>
+    <hr>
+    <form method="POST">
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col75">
+                    <input type="text" id="fname" size="10" maxlength="30" required="required" placeholder="First Name" />
+                </div>
+            </div>
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col75">
+                    <input type="text" id="lname" size="10" maxlength="30" required="required" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col75">
+                    <input type="text" id="email" size="10" maxlength="30" required="required" placeholder="Email" />
+                </div>
+            </div>
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="lname">Phone Number</label>
+                </div>
+                <div class="col75">
+                    <input type="text" id="phone" size="10" maxlength="30" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="hiredate">Hire Date</label>
+                </div>
+                <div class="col75">
+                    <input type="date" id="hiredate" maxlength="30" required="required" />
+                </div>
+            </div>
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="job">Job</label>
+                </div>
+                <div class="col75">
+                    <select id="job" required="required">
+                        <option value="AD_VP">Administration Vice President</option>
+                        <option value="AD_ASST">Administration Assistant</option>
+                        <option value="FI_MGR">Finance Manager</option>
+                        <option value="FI_ACC">Accountant</option>
+                        <option value="AC_MGR">Accounting Manager</option>
+                        <option value="AC_ACCOUNT">Public Accountant</option>
+                        <option value="SA_MAN">Sales Manager</option>
+                        <option value="SA_REP">Sales Representative</option>
+                        <option value="PU_MAN">Purchasing Manager</option>
+                        <option value="PU_CLERK">Purchasing Clerk</option>
+                        <option value="ST_MAN">Stock Manager</option>
+                        <option value="ST_CLERK">Stock Clerk</option>
+                        <option value="SH_CLERK">Shipping Clerk</option>
+                        <option value="IT_PROG">Programmer</option>
+                        <option value="MK_MAN">Marketing Manager</option>
+                        <option value="MK_REP">Marketing Representative</option>
+                        <option value="HR_REP">Human Resources Representative</option>
+                        <option value="PR_REP">Public Relations Representative</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="comm">Commission</label>
+                </div>
+                <div class="col75">
+                    <input type="number" id="comm" size="10" maxlength="30" />
+                </div>
+            </div>
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="salary">Salary</label>
+                </div>
+                <div class="col75">
+                    <input type="number" id="salary" size="10" maxlength="30" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="mgrid">Manager ID</label>
+                </div>
+                <div class="col75">
+                    <input type="number" id="mgrid" size="10" maxlength="30" />
+                </div>
+            </div>
+            <div class="empcolumn">
+                <div class="col25">
+                    <label for="deptid">Department ID</label>
+                </div>
+                <div class="col75">
+                    <input type="number" id="deptid" size="10" maxlength="30" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="empcolumn">
+                <div class="col25">
+                </div>
+                <div class="col75">
+                    <button type="button" onclick="return senddata()">Submit</button>
+                    <button type="button" onclick="location.href='employees.html'">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="footer">
+        <p>&copy 2022. Batch7</p>
+    </div>
+
+    <script src="employees.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
